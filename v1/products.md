@@ -44,11 +44,7 @@ Trong đó:
 
 
 
-# APIs Sản phẩm
-
-(*) là tham số yêu cầu điền
-
-## 1. Lấy danh sách sản phẩm theo danh mục
+## 2. Chi tiết thông tin 1 sản phẩm
 
 ### Request
 
