@@ -3,7 +3,16 @@
 
 ## Thông tin Chung
 
-- URL API: https://ngocnguyen.vn/api
+- Live URL: https://ngocnguyen.vn/api
+- Sanbox URL: https://sanbox.ngocnguyen.vn/api
+
+Cấu trúc Request Header:
+
+```text
+content-type: application/json
+X-API-Key: xxxx
+```
+
 
 - Cấu trúc Response
 
@@ -28,17 +37,16 @@ Nếu thất bại:
 ```
 
 
-## Danh mục Endpoints
+## Danh mục Endpoints V1
 
-- [1. ads](ads.md) - Banner quảng cáo
-- [2. articles](articles.md) - Bài viết Tin tức
-- [3. article_cat](article_cat.md) - Danh mục Tin tức
-- [4. auth](auth.md) - Authentication và Authorization
-- [5. cart](cart.md) - Giỏ hàng
-- [6. categories](articles.md) - Danh mục sản phẩm
-- [7. checkout](checkout.md) - Checkout đơn hàng
-- [8. customers](customers.md) - Khách hàng
-- [9. navigations](navigations.md) - Link liên kết
-- [10. payments](payments.md) - Phương thức thanh toán
-- [11. products](products.md) - Sản phẩm
-- [12. regions](regions.md) - Danh bạ hành chính Tỉnh thành
+- [1. ads](v1/ads.md) - Banner quảng cáo
+- [2. articles](v1/articles.md) - Tin tức
+- [3. auth](v1/auth.md) - Authentication và Authorization
+- [4. cart](v1/cart.md) - Giỏ hàng
+- [5. categories](v1/articles.md) - Danh mục sản phẩm
+- [6. checkout](v1/checkout.md) - Checkout đơn hàng
+- [7. customers](v1/customers.md) - Khách hàng
+- [8. navigation](v1/navigations.md) - Link liên kết
+- [9. payments](v1/payments.md) - Phương thức thanh toán
+- [10. products](v1/products.md) - Sản phẩm
+- [11. regions](v1/regions.md) - Danh bạ hành chính Tỉnh thành
