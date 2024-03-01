@@ -19,13 +19,13 @@
 "data": {
     "filter_prices": [],
     "filter_brands": [],
-    "filter_attrs" => [],
-    "products_list" => [],
-    "pagination" => [
-        "page" => 1,
-        "page_size"=> 20,
-        "total_records"=> 40,
-        "total_pages" =>  2
+    "filter_attrs" : [],
+    "products_list" : [],
+    "pagination" : [
+        "page" : 1,
+        "page_size": 20,
+        "total_records": 40,
+        "total_pages":  2
     ]
 },
 "query": {
