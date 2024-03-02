@@ -32,7 +32,7 @@
 }
 ```
 
-## 2. Lấy danh sách tin tức
+## 2. Lấy danh sách tin tức theo danh mục
 
 ### Request
 
@@ -144,7 +144,7 @@
 ```
 
 
-## 5. Danh sách comment một bài tin tức
+## 5. Danh sách comments một bài tin tức
 
 ### Request
 

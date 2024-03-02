@@ -52,7 +52,7 @@
 }
 ```
 
-## 2. Lấy danh sách Danh mục sản phẩm
+## 2. Thông tin chi tiết 1 danh mục
 
 ### Request
 

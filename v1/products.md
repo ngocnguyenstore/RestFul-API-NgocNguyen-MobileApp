@@ -110,3 +110,244 @@ Trong đó:
 - goods_cauhinh: Danh sách thông số kỹ thuật
 - alepay_allow: True, cho phép hiện nút trả góp
 - is_service: là dịch vụ sửa chữa.
+
+
+## 3. Lấy danh sách sản phẩm khuyến mãi trang chủ
+
+### Request
+
+- Method:  GET 
+- URL: /v1/products/promotion
+
+### Response
+
+```json
+
+{
+  "success": true,
+  "data": [
+    {
+      "goods_id": 14427,
+      "goods_name": " [New 100%] Dell XPS 13 Plus 9320 Core i7 12th \/ 13.4 inch (Model 2022)",
+      "seller_note": "",
+      "market_price": 54225000,
+      "org_price": 39150000,
+      "promote_price": 36150000,
+      "is_new": false,
+      "is_hot": false,
+      "is_best": false,
+      "is_tragop": false,
+      "goods_type": 26,
+      "shop_price": 39150000,
+      "promote_start_date": "1693176420",
+      "promote_end_date": "1819406880",
+      "goods_thumb": "https:\/\/ngocnguyen.vn\/cdn\/images\/202304\/thumb_img\/dell-xps-13-plus-9320-core-i7-1260p-ram-16gb-ssd-512gb-fhd-newoutlet-thumb-G14427-1682236277247.jpg",
+      "goods_img": "https:\/\/ngocnguyen.vn\/cdn\/images\/202304\/goods_img\/dell-xps-13-plus-9320-core-i7-1260p-ram-16gb-ssd-512gb-fhd-newoutlet-G14427-1682236277871.jpg",
+      "brand_name": "Dell",
+      "rnd": "0.16381709572283282",
+      "discount": "-8%",
+      "comment_rank": 0,
+      "comment_count": 0,
+      "url": "dellxps\/new-100-dell-xps-13-plus-9320-core-i7-1260p-13-4-inch-fhd"
+    },
+    
+  ],
+  "message": "success"
+
+}
+```
+
+
+## 4. Lấy danh sách tin liên quan sản phẩm
+
+### Request
+
+- Method:  GET 
+- URL: /v1/products/articles/:product_id
+- Param:
+  -  product_id (*): id của sản phẩm
+
+### Response
+
+```json
+{
+  "success": true,
+  "data": [
+    {
+      "article_id": 3771,
+      "title": "C\u00e1ch k\u00edch ho\u1ea1t Slide to Shut Down tr\u00ean Windows",
+      "click_count": "592",
+      "article_sthumb": "https:\/\/ngocnguyen.vn\/cdn\/article_thumb\/202308\/cach-kich-hoat-slide-to-shut-down-tren-windows-sthumb-1692860106.jpg",
+      "add_time": "6 th\u00e1ng tr\u01b0\u1edbc",
+      "url": "cach-kich-hoat-slide-to-shut-down-tren-windows",
+      "viewed": 592
+    },
+    
+  ],
+  "message": "success"
+}
+```
+
+## 4. Lấy danh sách sản phẩm liên quan
+
+### Request
+
+- Method:  GET 
+- URL: /v1/products/goodsrelate/:product_id
+- Param:
+  -  product_id (*): id của sản phẩm
+
+### Response
+
+```json
+"success": true,
+  "data": [
+    {
+      "goods_id": 3095,
+      "goods_name": "Dell Alienware M15 Core i7 4th\/ GTX 980M\/ 15.6 inch (Model 2014)",
+      "goods_thumb": "https:\/\/ngocnguyen.vn\/cdn\/images\/202304\/thumb_img\/dell-alienware-m15-i7-4710hq-ram-8gb-ssd-128gb-hdd-1tb-gtx-980m-156-inch-fhd-thumb-G3095-1681209656629.jpg",
+      "goods_img": "https:\/\/ngocnguyen.vn\/cdn\/images\/202304\/goods_img\/dell-alienware-m15-i7-4710hq-ram-8gb-ssd-128gb-hdd-1tb-gtx-980m-156-inch-fhd-G3095-1681209656697.jpg",
+      "seller_note": "",
+      "is_new": false,
+      "is_best": false,
+      "is_hot": false,
+      "is_tragop": false,
+      "org_price": 23900000,
+      "shop_price": 23900000,
+      "market_price": 0,
+      "promote_price": 0,
+      "promote_start_date": "0",
+      "promote_end_date": "0",
+      "discount": 0,
+      "url": "dellalienware\/dell-alienware-m15-core-i7-4th-gtx-980m-15-6-inch-model-2014"
+    },
+   
+  ],
+  "message": "success"
+}
+```
+
+
+## 5. Lấy danh sách sản phẩm cùng danh mục
+
+### Request
+
+- Method:  GET 
+- URL: /v1/products/goodsrelate/:product_id/:cat_id
+- Params:
+  -  product_id (*): id của sản phẩm
+  -  cat_id (*): id của danh mục
+
+### Response
+
+```json
+{
+  "success": true,
+  "data": [
+    {
+      "goods_id": 15212,
+      "goods_name": "[New 100%] Samsung Galaxy Z Flip 5 5G",
+      "rnd": "0.1379601649362223",
+      "goods_thumb": "https:\/\/ngocnguyen.vn\/cdn\/images\/202308\/thumb_img\/new-100-samsung-galaxy-z-flip5-5g-thumb-G15212-1693212165005.jpg",
+      "goods_img": "https:\/\/ngocnguyen.vn\/cdn\/images\/202308\/goods_img\/new-100-samsung-galaxy-z-flip5-5g-G15212-1693212165955.jpg",
+      "seller_note": "",
+      "is_new": false,
+      "is_best": false,
+      "is_hot": false,
+      "is_tragop": false,
+      "org_price": 17500000,
+      "shop_price": 17500000,
+      "market_price": 26250000,
+      "promote_price": 0,
+      "promote_start_date": "0",
+      "promote_end_date": "0",
+      "discount": 0,
+      "url": "samsung-galaxy-z\/new-100-samsung-galaxy-z-flip-5-5g"
+    },
+    
+  ],
+  "message": "success"
+}
+```
+
+## 5. Lấy danh sách comments sản phẩm
+
+### Request
+
+- Method:  GET 
+- URL: /v1/products/comments/:product_id
+- Params:
+  -  product_id (*): id của sản phẩm
+
+### Response
+
+```json
+{
+  "success": true,
+  "data": {
+    "comments": [
+      {
+        "comment_id": 252,
+        "id_value": 15194,
+        "email": "john@mail.com",
+        "user_name": "nguyen van a",
+        "content": "s\u1ea3n ph\u1ea9m r\u1ea5t ok",
+        "add_time": "14-12-2023 10:26:05",
+        "reply": [],
+        "photos": []
+      }
+    ],
+    "pagination": {
+      "page": 1,
+      "page_size": 5,
+      "total_records": 1,
+      "total_pages": 1
+    }
+  },
+  "message": "success"
+}
+```
+
+## 6. Lấy danh sách reviews sản phẩm
+
+### Request
+
+- Method:  GET 
+- URL: /v1/products/reviews/:product_id
+- Params:
+  -  product_id (*): id của sản phẩm
+
+### Response
+
+```json
+{
+  "success": true,
+  "data": {
+    "reviews": [
+      {
+        "comment_id": 246,
+        "id_value": 15194,
+        "email": "",
+        "user_name": "Hoa B\u1eb1ng",
+        "content": "R\u1ea5t th\u00edch thi\u1ebft k\u1ebf em n\u00e0y",
+        "add_time": "11-11-2023 19:05:16",
+        "is_buy": false,
+        "reply": [],
+        "photos": []
+      },
+     
+    ],
+    "pagination": {
+      "page": 1,
+      "page_size": 5,
+      "total_records": 2,
+      "total_pages": 1
+    }
+  },
+  "message": "success"
+}
+```
+
+## 7. Thêm mới comment/review 
+
+Đang cập nhật
