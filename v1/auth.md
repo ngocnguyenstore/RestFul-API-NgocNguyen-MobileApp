@@ -8,7 +8,7 @@
 
 - Method:  POST 
 - URL: /v1/auth/login
-- Params: 
+- Body: 
     - email (*): email khách hàng
     - password (*): mật khẩu khách hàng
 
@@ -70,7 +70,7 @@ Khách hàng cần gửi lên email. Nếu email tồn tại, hệ thống sẽ 
 
 - Method:  POST 
 - URL: /v1/auth/forgetpassword
-- Params: 
+- Body: 
     - email (*): email khách hàng
     
 ### Response
@@ -95,7 +95,7 @@ Cần truyền thêm token vào header của request
 - URL: /v1/auth/getpassword
 - Header: 
     - Authorization: Bearer token
-- Params: 
+- Body: 
     - password (*): mật khẩu khách hàng
     - confirm_password (*): mật khẩu khách hàng
     - code (*): Mã bảo mật gửi qua email
@@ -120,7 +120,7 @@ Cần truyền thêm token vào header của request
 
 - Method:  POST 
 - URL: /v1/auth/changepassword
-- Params: 
+- Body: 
     - new_password (*): mật khẩu mới khách hàng
     - old_password (*): mật khẩu cũ khách hàng
     
