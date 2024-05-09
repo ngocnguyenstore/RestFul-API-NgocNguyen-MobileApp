@@ -62,14 +62,13 @@ Cần truyền thêm token vào header của request
 
 ```
 
-
 ## 3. Quyên mật khẩu
 
 Khách hàng cần gửi lên email. Nếu email tồn tại, hệ thống sẽ gửi mã bảo mật qua email để khách hàng khôi phục.
 
 ### Request
 
-- Method:  GET 
+- Method:  POST 
 - URL: /v1/auth/forgetpassword
 - Params: 
     - email (*): email khách hàng
