@@ -41,7 +41,7 @@ Nếu thất bại:
 
 - [1. ads](v1/ads.md) - Banner quảng cáo
 - [2. articles](v1/articles.md) - Tin tức
-- [3. auth](v1/auth.md) - Authentication và Authorization
+- [3. auth](v1/auth.md) - Authentication (Updated)
 - [4. cart](v1/cart.md) - Giỏ hàng
 - [5. categories](v1/articles.md) - Danh mục sản phẩm
 - [6. checkout](v1/checkout.md) - Checkout đơn hàng
