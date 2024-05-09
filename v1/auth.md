@@ -87,7 +87,13 @@ Khách hàng cần gửi lên email. Nếu email tồn tại, hệ thống sẽ 
 
 ## 4. Khôi phục mật khẩu
 
-Cần truyền thêm token vào header của request
+Cần truyền thêm token vào header của request.
+
+Mật khẩu khớp với:
+
+```js
+$pattern = '/^(?=.*[!@#$%^&*-])(?=.*[0-9])(?=.*[A-Z]).{8,20}$/'
+```
 
 ### Request
 
@@ -115,6 +121,11 @@ Cần truyền thêm token vào header của request
 
 ## 5. Thay đổi mật khẩu
 
+Mật khẩu khớp với:
+
+```js
+$pattern = '/^(?=.*[!@#$%^&*-])(?=.*[0-9])(?=.*[A-Z]).{8,20}$/'
+```
 
 ### Request
 
