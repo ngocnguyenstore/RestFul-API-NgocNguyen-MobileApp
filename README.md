@@ -51,6 +51,6 @@ Nếu thất bại:
 - [10. products](v1/products.md) - Sản phẩm (Updated)
 - [11. regions](v1/regions.md) - Danh bạ hành chính Tỉnh thành (Updated)
 - [12. shippings](v1/shippings.md) - Phương thức giao hàng (Updated)
-- [13. agency](v1/agency.md) - Hệ thống chi nhánh
+- [13. agency](v1/agency.md) - Hệ thống chi nhánh (Updated)
 - [14. settings](v1/settings.md) - Thông tin cấu hình chung
-- [14. helps](v1/helps.md) - Links trợ giúp dưới footer
+- [14. helps](v1/helps.md) - Links trợ giúp dưới footer (Updated)
