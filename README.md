@@ -47,6 +47,7 @@ Nếu thất bại:
 - [6. checkout](v1/checkout.md) - Checkout đơn hàng
 - [7. customers](v1/customers.md) - Khách hàng
 - [8. navigation](v1/navigations.md) - Link liên kết
-- [9. payments](v1/payments.md) - Phương thức thanh toán
+- [9. payments](v1/payments.md) - Phương thức thanh toán (Updated)
 - [10. products](v1/products.md) - Sản phẩm (Updated)
 - [11. regions](v1/regions.md) - Danh bạ hành chính Tỉnh thành (Updated)
+- [12. shippings](v1/shippings.md) - Phương thức giao hàng (Updated)
