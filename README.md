@@ -42,15 +42,14 @@ Nếu thất bại:
 - [1. ads](v1/ads.md) - Banner quảng cáo (Updated)
 - [2. articles](v1/articles.md) - Tin tức (Updated)
 - [3. auth](v1/auth.md) - Authentication (Updated)
-- [4. cart](v1/cart.md) - Giỏ hàng
 - [5. categories](v1/categories.md) - Danh mục sản phẩm (Updated)
 - [6. checkout](v1/checkout.md) - Checkout đơn hàng
 - [7. customers](v1/customers.md) - Khách hàng
-- [8. navigation](v1/navigations.md) - Link liên kết
+- [8. navigation](v1/navigations.md) - Link điều hướng theo vị trí (Updated)
 - [9. payments](v1/payments.md) - Phương thức thanh toán (Updated)
 - [10. products](v1/products.md) - Sản phẩm (Updated)
 - [11. regions](v1/regions.md) - Danh bạ hành chính Tỉnh thành (Updated)
 - [12. shippings](v1/shippings.md) - Phương thức giao hàng (Updated)
 - [13. agency](v1/agency.md) - Hệ thống chi nhánh (Updated)
-- [14. settings](v1/settings.md) - Thông tin cấu hình chung
-- [14. helps](v1/helps.md) - Links trợ giúp dưới footer (Updated)
+- [14. settings](v1/settings.md) - Thông tin cấu hình chung (Updated)
+- [15. helps](v1/helps.md) - Links trợ giúp dưới footer (Updated)
