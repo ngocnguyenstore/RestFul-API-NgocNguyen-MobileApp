@@ -145,3 +145,35 @@ $pattern = '/^(?=.*[!@#$%^&*-])(?=.*[0-9])(?=.*[A-Z]).{8,20}$/'
 }
 
 ```
+
+## 6. Đăng ký
+
+Mật khẩu khớp với:
+
+```js
+$pattern = '/^(?=.*[!@#$%^&*-])(?=.*[0-9])(?=.*[A-Z]).{8,20}$/'
+```
+
+### Request
+
+- Method:  POST 
+- URL: /v1/auth/register
+- Body: 
+    - email (*): email khách hàng
+    - password (*): mật khẩu khách hàng
+    - mobile (*): số điện thoại khách hàng
+    
+### Response
+
+```json
+//Nếu thành công
+{
+  "success": true,
+  "message": "Đăng ký thành công"
+}
+//Nếu thất bại. Ví dụ
+{
+  "success": false,
+  "message": "Email không hợp lệ"
+}
+```
