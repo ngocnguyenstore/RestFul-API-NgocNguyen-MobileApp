@@ -102,7 +102,7 @@ $pattern = '/^(?=.*[!@#$%^&*-])(?=.*[0-9])(?=.*[A-Z]).{8,20}$/'
 - Body: 
     - password (*): mật khẩu khách hàng
     - confirm_password (*): mật khẩu khách hàng
-    - code (*): Mã bảo mật gửi qua email
+    - code (*): Mã bảo mật gửi qua email (bao gồm cả dấu -)
     
 ### Response
 
