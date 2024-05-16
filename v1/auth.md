@@ -99,8 +99,6 @@ $pattern = '/^(?=.*[!@#$%^&*-])(?=.*[0-9])(?=.*[A-Z]).{8,20}$/'
 
 - Method:  POST 
 - URL: /v1/auth/getpassword
-- Header: 
-    - Authorization: Bearer token
 - Body: 
     - password (*): mật khẩu khách hàng
     - confirm_password (*): mật khẩu khách hàng
@@ -120,6 +118,8 @@ $pattern = '/^(?=.*[!@#$%^&*-])(?=.*[0-9])(?=.*[A-Z]).{8,20}$/'
 
 
 ## 5. Thay đổi mật khẩu
+
+Áp dụng cho user đã login rồi, muốn thay đổi mật khẩu.
 
 Mật khẩu khớp với:
 
