@@ -75,10 +75,11 @@ Lưu ý:
 {
     success: true,
     data: {
-        order: {}, //Thông tin đơn hàng
+        order: {}, //Thông tin đơn hàng,
+        total: {}, //Thông tin đơn hàng,
         consignee: {}, //Thông tin khách hàng
         cart_goods: [] //Sản phẩm đã mua
     },
-    message: "Tạo mới đơn hàng thành công !"
+    message: "Tạo đơn hàng thành công !"
 }
 ```
