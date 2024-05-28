@@ -138,6 +138,7 @@ Trong đó:
 - is_on_sale: tính sẵn sàng bán: 1 đang bán, 0 ngừng bán
 - goods_sn: mã sản phẩm
 - goods_id: id sản phẩm,
+- cat_id: id danh mục sản phẩm
 - goods_status: trạng thái sản phẩm
 - goods_brief: mô tả ngắn
 - goods_desc: là mô tả chi tiết sản phẩm
@@ -170,7 +171,9 @@ Trong đó:
 - meta_title: nội dung cho thẻ meta title
 - meta_desc: nội dung cho meta description
 - meta_robots: nội dung cho content meta robot
-
+- click_count: lượt xem,
+- comment_rank: xếp hạng sao
+- seller_note: ghi chú sản phẩm
 
 ## 3. Lấy danh sách sản phẩm khuyến mãi trang chủ
 
