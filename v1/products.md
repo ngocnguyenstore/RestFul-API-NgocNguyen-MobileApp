@@ -7,10 +7,37 @@
 ### Request
 
 - Method:  GET 
-- URL: GET /v1/products?cat_id=1&f=man-hinh-15-inch,nhu-cau-gaming
+- URL: GET `/v1/products?cat_id=1&f=man-hinh-15-inch,nhu-cau-gaming&rc=moi-ve&page=1&page_size=10&brand_id=1&price_min=0&price_max=5000000&sort=sort_order&order=DESC`
 - Query String: 
-    - cat_id (*): id danh mục
-    - f: là tham số để lọc, mỗi giá trị lọc phân cách bằng dấu phẩy. Giá trị của bộ lọc được lấy lên từ thuộc tính lọc `filter_attrs` theo mỗi request.
+    - `cat_id` (*): id danh mục
+    - `page`: trang hiện tại, mặc định 1
+    - `page_size`: số lượng sản phẩm / 1 page, mặc định theo cấu hình trong admin,
+    - `brand_id`: id thương hiệu,
+    - `price_min`: giá nhỏ nhấtm
+    - `price_max`: giá lớn nhất
+    - `rc`: lọc theo đề xuất (xem bên dưới),
+    - `sort`: sắp xếp (xem bên dưới)
+    - `f`: là tham số để lọc, mỗi giá trị lọc phân cách bằng dấu phẩy. Giá trị của bộ lọc được lấy lên từ thuộc tính lọc `filter_attrs` theo mỗi request.
+
+Trong đó:
+
+
+- `rc`: gồm các giá trị, mặc định không truyền
+  - `moi-ve`: lọc sản phẩm mới
+  - `noi-bat`: lọc sản phẩm nổi bật
+  - `ban-chay`: lọc sản phẩm bán chạy
+
+- `sort`: sắp xếp theo trường: 
+  - `sort_order`: vị trí, (là mặc định)
+  - `goods_id`: lọc id sản phẩm
+  - `shop_price`: theo giá bán
+  - `last_update`: theo ngày cập nhật
+
+- `order`: chiều sắp xếp 
+  - `DESC`: giảm dần
+  - `ASC`: tăng dần
+
+
 
 ### Response
 
@@ -20,13 +47,18 @@
     "filter_prices": [],
     "filter_brands": [],
     "filter_attrs" : [],
+    "filter_recommend": "rc",
+    "sort_order": {
+        "sortBy": "order_by",
+        "orderBy": "DESC"
+    },
     "products_list" : [],
-    "pagination" : [
+    "pagination" : {
         "page" : 1,
         "page_size": 20,
         "total_records": 40,
         "total_pages":  2
-    ]
+    }
 },
 "query": {
     "cat_id": "1"
