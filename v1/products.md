@@ -135,13 +135,41 @@ Trong đó:
 
 Trong đó:
 
+- is_on_sale: tính sẵn sàng bán: 1 đang bán, 0 ngừng bán
+- goods_sn: mã sản phẩm
+- goods_id: id sản phẩm,
+- goods_status: trạng thái sản phẩm
+- goods_brief: mô tả ngắn
 - goods_desc: là mô tả chi tiết sản phẩm
-- gallery: là danh sách hình ảnh
 - specification: là danh sách các biến thể
 - pro_extra: thông tin mở rộng
 - goods_cauhinh: Danh sách thông số kỹ thuật
 - alepay_allow: True, cho phép hiện nút trả góp
 - is_service: là dịch vụ sửa chữa.
+- shop_price: giá bán
+- market_price: giá thị trường
+- promotion_price: giá khuyến mãi
+- price_final: giá cuối (giá đã giảm cuối cùng)
+- brand_id: id thương hiệu
+- goods_gifts: quà tặng,
+- time_gift: áp dụng quà tặng theo thời gian
+- gift_start_date: ngày bắt đầu áp dụng quà tặng
+- gift_end_date: ngày kết thúc áp dụng quà tặng
+- goods_number: số lượng tồn kho
+- goods_img: hình sản phẩm,
+- goods_thumb: hình đại diện
+- gallery: bộ sưu tập hình sản phẩm
+- is_real: là sản phẩm vật lý hay ảo
+- is_shipping: miễn ship
+- is_best: là sản phẩm bán chạy
+- is_new: là sản phẩm mới,
+- is_hot: là sản phẩm hot
+- is_promote: là sản phẩm khuyến mãi
+- is_home: đưa sản phẩm ra Home
+- is_tragop: cho phép trả góp
+- meta_title: nội dung cho thẻ meta title
+- meta_desc: nội dung cho meta description
+- meta_robots: nội dung cho content meta robot
 
 
 ## 3. Lấy danh sách sản phẩm khuyến mãi trang chủ
