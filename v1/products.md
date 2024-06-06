@@ -4,6 +4,8 @@
 
 ## 1. Lấy danh sách sản phẩm theo danh mục
 
+Dùng để lấy dữ liệu đổ ra cho trang này: https://ngocnguyen.vn/laptop.html
+
 ### Request
 
 - Method:  GET 
@@ -177,6 +179,8 @@ Trong đó:
 
 ## 3. Lấy danh sách sản phẩm khuyến mãi trang chủ
 
+Dùng lấy sản phẩm khuyến mãi đưa ra trang chủ
+
 ### Request
 
 - Method:  GET 
@@ -223,6 +227,8 @@ Trong đó:
 
 ## 4. Lấy danh sách tin liên quan sản phẩm
 
+Dùng ở màn hình chi tiết sản phẩm
+
 ### Request
 
 - Method:  GET 
@@ -252,6 +258,8 @@ Trong đó:
 ```
 
 ## 4. Lấy danh sách sản phẩm liên quan
+
+Dùng ở màn hình chi tiết sản phẩm
 
 ### Request
 
@@ -292,6 +300,8 @@ Trong đó:
 
 
 ## 5. Lấy danh sách sản phẩm cùng danh mục
+
+Dùng ở màn hình chi tiết sản phẩm
 
 ### Request
 
@@ -335,6 +345,8 @@ Trong đó:
 
 ## 5. Lấy danh sách comments sản phẩm
 
+Dùng ở màn hình chi tiết sản phẩm
+
 ### Request
 
 - Method:  GET 
@@ -372,6 +384,8 @@ Trong đó:
 ```
 
 ## 6. Lấy danh sách reviews sản phẩm
+
+Dùng ở màn hình chi tiết sản phẩm
 
 ### Request
 
@@ -411,6 +425,41 @@ Trong đó:
 }
 ```
 
-## 7. Thêm mới comment/review 
+## 7. Lấy danh sách sản phẩm theo danh mục ra trang chủ
+
+Dùng ở màn hình tranh chủ
+
+### Request
+
+- Method:  GET 
+- URL: /v1/products/home/:cat_id?limit=4
+- Params:
+  -  cat_id (*): id của danh mục sản phẩm
+- Query String:
+ - limit: Mặc định là 4, số lượng cần lấy
+
+### Response
+
+```js
+{
+  "success": true,
+  "data": {
+    "url": "laptop.html",
+    "id": 1, //ID danh mục
+    "cat_name": "Laptop", //Tên danh mục
+    "custom_name": "Laptop",
+    "ads_home": "0",
+    "ads_home_mobile": "0",
+    "cat_clild": [], //Danh sách danh mục con
+    "products": [] //danh sách sản phẩm thuộc danh mục
+  },
+  "message": "success"
+}
+```
+
+## 8. Thêm mới comment/review 
+
+Dùng ở màn hình chi tiết sản phẩm
+
 
 Đang cập nhật
