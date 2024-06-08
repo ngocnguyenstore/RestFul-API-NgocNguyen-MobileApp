@@ -60,7 +60,8 @@ Trong đó:
         "page_size": 20,
         "total_records": 40,
         "total_pages":  2
-    }
+    },
+    "category": {}
 },
 "query": {
     "cat_id": "1"
@@ -75,6 +76,7 @@ Trong đó:
 - filter_attrs: Là một mảng, danh sách bộ lọc theo thuộc tính, biến thể
 - products_list: Là một mảng, danh sách sản phẩm khớp với điều kiện lọc hiện tại
 - pagination: Là một mảng, phân trang
+- category: Thông tin danh mục hiện tại
 
 
 
