@@ -3,6 +3,13 @@
 (*) là tham số yêu cầu điền
 
 
+## Quy trình
+
+- Client gửi token subscriber thông báo --> Backend lưu lại
+- Backend bắn thông báo cho những Client đã subscriber --> đến --> FCM
+- FCM forward lại thông báo cho Client
+
+
 ## 1. Lấy danh sách thông báo
 
 ### Request
