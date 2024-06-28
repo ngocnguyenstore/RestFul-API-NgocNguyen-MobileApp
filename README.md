@@ -53,3 +53,4 @@ Nếu thất bại:
 - [13. agency](v1/agency.md) - Hệ thống chi nhánh (Updated)
 - [14. settings](v1/settings.md) - Thông tin cấu hình chung (Updated)
 - [15. helps](v1/helps.md) - Links trợ giúp dưới footer (Updated)
+- [16. notifications](v1/notifications.md) - Thông báo (Updated)
