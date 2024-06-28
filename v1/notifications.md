@@ -64,3 +64,28 @@ Trả về mặc định `20` thông báo mới nhất
   "message": "success"
 }
 ```
+
+
+
+## 3. Lưu trữ thiết bị nhận thông báo
+
+### Request
+
+- Method:  POST 
+- URL: /v1/notifications/token
+- Body:
+  - token (*): token thiết bị
+
+
+### Response
+
+
+```json
+{
+  "success": true,
+  "data": {
+    "token": "your token",
+  },
+  "message": "success"
+}
+```
