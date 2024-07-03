@@ -69,7 +69,9 @@ Trả về mặc định `20` thông báo mới nhất
 }
 ```
 
-## 3. Lưu trữ thiết bị nhận thông báo
+## 3. Đăng ký thiết bị nhận thông báo
+
+Thiết bị đăng ký nhận thông báo dựa vào token
 
 ### Request
 
@@ -87,5 +89,31 @@ Trả về mặc định `20` thông báo mới nhất
     "token": "your token"
   },
   "message": "success"
+}
+```
+
+## 4. Subscribe thiết bị theo Topic
+
+Thiết bị đăng ký nhận thông báo theo chủ đề
+
+### Request
+
+- Method: POST
+- URL: /v1/notifications/subcribe_topic
+- Body:
+  - token (\*): token thiết bị
+  - topic (\*): Chủ đề. Mặc dịnh là `common`
+
+### Response
+
+```json
+{
+  "success": true,
+  "data": {
+    "common": {
+      "token": "OK"
+    }
+  },
+  "message": "Thiết bị đã được đăng ký vào chủ đề thành công"
 }
 ```
