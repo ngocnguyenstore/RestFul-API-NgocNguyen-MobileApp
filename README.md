@@ -1,6 +1,5 @@
 # Tài liệu API Mobile App Ngoc Nguyen Store
 
-
 ## Thông tin Chung
 
 - Live URL: https://ngocnguyen.vn/api
@@ -12,7 +11,6 @@ Cấu trúc Request Header:
 content-type: application/json
 X-API-Key: xxxx
 ```
-
 
 - Cấu trúc Response
 
@@ -36,7 +34,6 @@ Nếu thất bại:
 }
 ```
 
-
 ## Danh mục Endpoints V1
 
 - [1. ads](v1/ads.md) - Banner quảng cáo (Updated)
@@ -54,3 +51,4 @@ Nếu thất bại:
 - [14. settings](v1/settings.md) - Thông tin cấu hình chung (Updated)
 - [15. helps](v1/helps.md) - Links trợ giúp dưới footer (Updated)
 - [16. notifications](v1/notifications.md) - Thông báo (Updated)
+- [17. search](v1/searach.md) - Tìm kiếm sản phẩm (Updated)
