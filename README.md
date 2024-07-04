@@ -40,7 +40,7 @@ Nếu thất bại:
 - [2. articles](v1/articles.md) - Tin tức (Updated)
 - [3. auth](v1/auth.md) - Authentication (Updated)
 - [5. categories](v1/categories.md) - Danh mục sản phẩm (Updated)
-- [6. checkout](v1/checkout.md) - Checkout đơn hàng (Updating.........)
+- [6. checkout](v1/checkout.md) - Checkout đơn hàng (Updated)
 - [7. customers](v1/customers.md) - Khách hàng (Updated)
 - [8. navigation](v1/navigations.md) - Link điều hướng theo vị trí (Updated)
 - [9. payments](v1/payments.md) - Phương thức thanh toán (Updated)
