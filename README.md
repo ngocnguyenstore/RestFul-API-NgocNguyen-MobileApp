@@ -2,8 +2,15 @@
 
 ## Thông tin Chung
 
+### Ngọc Nguyên API
+
 - Live URL: https://ngocnguyen.vn/api
 - Sanbox URL: https://sanbox.ngocnguyen.vn/api
+
+### Ngọc Nguyên Care API
+
+- Live URL: https://ngocnguyencare.com/api
+- Sanbox URL: Updating...
 
 Cấu trúc Request Header:
 
@@ -36,6 +43,8 @@ Nếu thất bại:
 
 ## Danh mục Endpoints V1
 
+### Endpoints Chung
+
 - [1. ads](v1/ads.md) - Banner quảng cáo (Updated)
 - [2. articles](v1/articles.md) - Tin tức (Updated)
 - [3. auth](v1/auth.md) - Authentication (Updated)
@@ -52,3 +61,7 @@ Nếu thất bại:
 - [15. helps](v1/helps.md) - Links trợ giúp dưới footer (Updated)
 - [16. notifications](v1/notifications.md) - Thông báo (Updated)
 - [17. search](v1/searach.md) - Tìm kiếm sản phẩm (Updated)
+
+### Endpoints riêng Ngọc Nguyên Care
+
+- [1. appointment](v1/appointment.md) - Đặt lich hẹn sửa chửa
