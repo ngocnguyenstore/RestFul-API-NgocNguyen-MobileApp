@@ -61,6 +61,7 @@ Nếu thất bại:
 - [15. helps](v1/helps.md) - Links trợ giúp dưới footer (Updated)
 - [16. notifications](v1/notifications.md) - Thông báo (Updated)
 - [17. search](v1/searach.md) - Tìm kiếm sản phẩm (Updated)
+- [18. wrranty](v1/warranty.md) -  Kiểm tra bảo hành (Updated)
 
 ### Endpoints riêng Ngọc Nguyên Care
 
