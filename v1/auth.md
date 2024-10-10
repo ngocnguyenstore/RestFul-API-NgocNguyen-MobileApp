@@ -80,7 +80,15 @@ Khách hàng cần gửi lên email. Nếu email tồn tại, hệ thống sẽ 
 {
   "success": true,
   "message": "Gửi email khôi phục mật khẩu thành công",
-  "data": ""
+  "data": {
+    "user_id": 1,
+    "user_name" : "abc",
+    "email": "youremail@gmail.com"
+  },
+  "links": {
+    "self": "/v1/auth/forgetpassword",
+    "next": "/v1/auth/getpassword"
+  }
 }
 
 ```
@@ -102,7 +110,8 @@ $pattern = '/^(?=.*[!@#$%^&*-])(?=.*[0-9])(?=.*[A-Z]).{8,20}$/'
 - Body: 
     - password (*): mật khẩu khách hàng
     - confirm_password (*): mật khẩu khách hàng
-    - code (*): Mã bảo mật gửi qua email (bao gồm cả dấu -)
+    - code (*): Mã bảo mật OTP gửi qua email 
+    - user_id (*): User ID received at pre API
     
 ### Response
 
@@ -146,7 +155,9 @@ $pattern = '/^(?=.*[!@#$%^&*-])(?=.*[0-9])(?=.*[A-Z]).{8,20}$/'
 
 ```
 
-## 6. Đăng ký
+## 6. Đăng ký Người dùng
+
+Follow: Register --> Verify OTP --> Success
 
 Mật khẩu khớp với:
 
@@ -169,11 +180,88 @@ $pattern = '/^(?=.*[!@#$%^&*-])(?=.*[0-9])(?=.*[A-Z]).{8,20}$/'
 //Nếu thành công
 {
   "success": true,
-  "message": "Đăng ký thành công"
+  "message": "Đăng ký thành công",
+  "data": {
+    "user_id": 1,
+    "user_name" : "abc",
+    "email": "youremail@gmail.com"
+  },
+  "links": {
+    "self": "/v1/auth/register",
+    "next": "/v1/auth/verifyemail"
+  }
 }
 //Nếu thất bại. Ví dụ
 {
   "success": false,
   "message": "Email không hợp lệ"
+}
+```
+
+
+
+## 7. Verify OTP
+
+
+### Request
+
+- Method:  POST 
+- URL: /v1/auth/verifyemail
+- Body: 
+    - code (*): Code OTP
+    - user_id (*): User ID received at pre API
+    
+### Response
+
+```json
+//Nếu thành công
+{
+  "success": true,
+  "message": "Xác thực người dùng thành công"
+}
+//Nếu thất bại. Ví dụ
+{
+  "success": false,
+  "message": "Xác thực email thất bại"
+}
+```
+
+
+
+## 8. Send OTP
+
+
+### Request
+
+- Method:  POST 
+- URL: /v1/auth/sendotp
+- Body: 
+    - user_id (*): User ID,
+    - user_name (*): Username,
+    - email (*): Email
+    
+### Response
+
+```json
+//Nếu thành công
+{
+  "success": true,
+  "message": "Gửi mã OTP thành công",
+  "data": {
+    "user_id": 1,
+    "user_name" : "abc",
+    "email": "youremail@gmail.com"
+  }
+  
+}
+//Nếu thất bại. Ví dụ
+{
+  "success": false,
+  "message": "Gửi mã OTP thất bại",
+  "data": {
+    "user_id": 1,
+    "user_name" : "abc",
+    "email": "youremail@gmail.com"
+  }
 }
 ```
