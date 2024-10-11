@@ -181,7 +181,75 @@
 //Nếu thành công
 {
   "success": true,
-  "message": "Cập nhật địa chỉ thành công !"
+  "message": "Cập nhật địa chỉ thành công !",
+  "data": {}, //Body payload
+}
+
+```
+
+
+
+## 7. Thêm địa chỉ giao hàng
+
+### Request
+
+- Method:  POST 
+- URL: /v1/customers/add_address
+- Header: 
+    - Authorization: Bearer token
+- Body:
+
+```js
+{
+  "country": 1, //Require
+  "province": 3, //Require
+  "city": 623, //Require
+  "district": 943, //Require
+  "address": "171 nguyen xi", //Require
+  "consignee": " toi la tester", //Require
+  "email": "tivateo@gmail.com", //Require
+  "tel": "0988777666", //Require
+  "mobile": "0988777666", 
+  "best_time": "goi truoc khi giao"
+}
+```
+
+### Response
+
+```js
+//Nếu thành công
+{
+  "success": true,
+  "message": "Thêm địa chỉ thành công !"
+  "data": {}, //Body payload
+}
+
+```
+
+
+
+## 8. Xóa địa chỉ giao hàng
+
+### Request
+
+- Method:  POST 
+- URL: /v1/customers/remove_address/:address_id
+- Header: 
+    - Authorization: Bearer token
+- Params:
+    - address_id (*): ID của địa chỉ giao hàng
+
+### Response
+
+```js
+//Nếu thành công
+{
+  "success": true,
+  "message": "Xóa địa chỉ thành công !"
+  "data": {
+    'user_id': 1,
+    'address_id': 1
+  }
 }
 
 ```
