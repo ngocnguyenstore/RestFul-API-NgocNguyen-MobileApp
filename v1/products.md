@@ -465,3 +465,34 @@ Dùng ở màn hình chi tiết sản phẩm
 
 
 Đang cập nhật
+
+## 9. Get Price By Attributes
+
+- Method:  GET 
+- URL: api/v1/products/price/:product_id?attrs=27197,17119,46781,27195,24028,45569&number=1
+- Params:
+  -  product_id (*): id của danh mục sản phẩm
+- Query String:
+ - attrs: danh sách goods_attr_id đã chọn
+ - number: Số lượng sản phẩm, mặc định là 1
+
+### Response
+
+```js
+{
+  "success": true,
+  "data": {
+    "attrs": [
+      "27197",
+      "17119",
+      "46781",
+      "27195",
+      "24028",
+      "45569"
+    ],
+    "number": 1,
+    "price": 21740000
+  },
+  "message": "success",
+}
+```
