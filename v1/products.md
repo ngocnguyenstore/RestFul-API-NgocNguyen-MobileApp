@@ -496,3 +496,38 @@ Dùng ở màn hình chi tiết sản phẩm
   "message": "success",
 }
 ```
+
+
+## 10. Check Sotck by Product ID
+
+- Method:  POST 
+- URL: api/v1/products/stock/:product_id/:quantity
+- Params:
+  -  product_id (*): id của danh mục sản phẩm
+  -  quantity (*): số lượng cần lấy
+
+### Response
+
+Nếu đủ số lượng sản phẩm thì outStock = false, ngược lại outStock = true
+
+```js
+{
+  "success": true,
+  "data": {
+    "outStock": true,
+    "number": 1,
+    "stock": 2
+  },
+  "message": "success",
+}
+//hoặc với outStock = false
+{
+  "success": true,
+  "data": {
+    "outStock": false,
+    "number": 1,
+    "stock": 0
+  },
+  "message": "Sản phẩm này không đủ số lượng",
+}
+```
